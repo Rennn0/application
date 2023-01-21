@@ -1,11 +1,14 @@
 import { useState } from "react";
 
 const PRODUCTS = [
-  {category: "Fruits", price: "$1", stocked: true, name: "Apple"},
-  {category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit"},
-  {category: "Fruits", price: "$2", stocked: false, name: "Passionfruit"},
-  {category: "Vegetables", price: "$2", stocked: true, name: "Spinach"},
-  {category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin"},
+  {category: "შაურმა", price: "$9", stocked: true, name: "პატარა"},
+  {category: "შაურმა", price: "$11", stocked: true, name: "საშუალო"},
+  {category: "შაურმა", price: "$14", stocked: true, name: "დიდი"},
+  {category: "შაურმა", price: "$20", stocked: false, name: "დიიიიიიდი"},
+  {category: "გამაგრილებელი სასმელები", price: "$1", stocked: true, name: "წყალი"},
+  {category: "გამაგრილებელი სასმელები", price: "$2", stocked: true, name: "კოლა 0.5"},
+  {category: "გამაგრილებელი სასმელები", price: "$2", stocked: true, name: "პეპსი 0.5"},
+  {category: "გამაგრილებელი სასმელები", price: "$2", stocked: true, name: "ფანტა"},
 
 ];
 
@@ -79,7 +82,7 @@ function SearchBar({filterText,inStockOnly, onFilterTextChange, onInStockOnlyCha
       <label>
         <input type="checkbox" checked={inStockOnly} onChange={(e)=>onInStockOnlyChange(e.target.checked)} />
         {' '}
-        Only show products in stock
+        მარაგშია
       </label>
     </form>
   );
